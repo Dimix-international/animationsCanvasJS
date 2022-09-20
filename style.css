@@ -3,3 +3,8 @@ body {
     overflow: hidden;
     background: rgb(17,17,19);
 }
+
+canvas {
+    display: block;
+    background: #000;
+}
