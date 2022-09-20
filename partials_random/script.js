@@ -12,8 +12,8 @@
             particleRadius: 3,
             particleCount: 60,
             particleMaxVelocity: 0.5,
-            lineLength: 150, // Длина соединения
-            particleLife: 6, //6 сек максим жизнь частицы
+            lineLength: 200, // Длина соединения
+            particleLife: 10, //10 сек максим жизнь частицы
         };
 
         document.querySelector('body').appendChild(canvas);
@@ -74,7 +74,7 @@
                     this.velocityX = Math.random() * (properties.particleMaxVelocity * 2) - properties.particleMaxVelocity;
                     this.velocityY = Math.random() * (properties.particleMaxVelocity * 2) - properties.particleMaxVelocity;
 
-                    this.life = Math.random() * properties.particleLife * 60;
+                    this.life = Math.random() * properties.particleLife * 60; //*60 - примерное кол-во кадров
                 }
                 this.life --;
             }
